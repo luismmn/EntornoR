@@ -1,0 +1,19 @@
+{
+  "name": "entorno",
+  "version": "1.0.0",
+  "description": "trabajo",
+  "main": "primerspring.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "luis",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^6.8.0"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "uglify-js": "^3.8.1"
+  }
+}
