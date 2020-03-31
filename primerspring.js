@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 let listadoPescaderia = [];
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -42,3 +43,4 @@ function mostrarPescaderiaRefactorizados(idDivMostrar, lista) {
     divListadoPescaderia.appendChild(ulPescaderia);
 
 }
+
