@@ -1,43 +1,87 @@
-<<<<<<< HEAD
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous" defer></script>
-    <title>RECUPERACION F</title>
-  <script src="public/prueba.min.js" defer></script>
-    <nav class="navbar navbar-expand-sm bg-light navbar-light">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">pagina1</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">pagina2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">pagina3</a>
-        </li>
-        
-      </ul>
-    </nav>
+  
+  <link rel="stylesheet" type="text/css" href="DataTables/datatables.min.css" />
+    <script type="text/javascript" src="DataTables/datatables.min.js"></script>
+    <title>Busqueda</title>
+  <script src="public/mostrartabla.min.js" defer></script>
+  <script src="public/Busqueda.min.js" defer></script>
+  <script src="public/Busqueda2.min.js" defer></script>
+  <script src="public/Busqueda3.min.js" defer></script>
+  <link rel="stylesheet" href="css.css">
   </head>
   <body>
-    <h1>RECUPERACION</h1>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <nav class="navbar navbar-dark bg-primary mb-2">
+  		<a class="navbar-brand text-light" href="inicio.html">Principal</a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  		</button>
+  		<div class="collapse navbar-collapse" id="navbarNav">
+    		<ul class="navbar-nav">
+				<li class="nav-item dropdown">
+        			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          				Pescaderia
+        			</a>
+        			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          				<a class="dropdown-item" href="inicio.html">Inicio </a>         				
+          				<a class="dropdown-item" href="index2.html">Mostrar </a>
+          				<a class="dropdown-item" href="index3.html">Añadir </a>
+          				<a class="dropdown-item" href="ActualizarPez.php">Editar </a>
+          				<a class="dropdown-item" href="eliminarPez.php">Eliminar </a>                    
+        			</div>
+        		</li>
+    		</ul>
+		</div>
+	</nav>	
     
+    <h1>Mostrar</h1>
+    <div>
+      <form id="formulariodebusqueda" >
+        <label for="buscador"></label>
+        <input id="buscador" type="text">
+        <button>busqueda</button>
+      </form>
+    </div>
+    <div id="spinner" class="spinner">
+      <div class="dot1"></div>
+      <div class="dot2"></div>
+  </div>
+  
+    
+    <div>
+      <form id="busqueda2" class="table">
+      <label>viven en</label>
+      <select id="selectBusqueda" name="">
+        <option value="">NINGUNO</option>
+        <option value="rio">RIO</option>
+        <option value="mar">MAR</option>
+        <option value="oceano">OCEANO</option>
+        <option value="lago">LAGO</option>
+      </select>
+      
+    <div>
+      <form id="formBusqueda3" >
+          <label>EN STOCK</label>
+          <input id="checkBusqueda" type="checkbox" value="1" >
+      </form>
+    
+  
+    
+  <div id="resultado">
+
+  </div>
+  
   </body>
 
 </html>
